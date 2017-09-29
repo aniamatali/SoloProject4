@@ -23,7 +23,7 @@ $(document).ready(function() {
 
     var inputtedName = $("#yourName").val();
     var size = $("#size").val();
-
+    
     var pizza = new Pizza(size);
     $("#output").show();
     //Pushes the value of all input checked to the empty array
