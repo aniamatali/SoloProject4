@@ -58,3 +58,7 @@ button:hover {
   color:black;
   border:3px solid #4992ff;
 }
+
+#output {
+  display:none;
+}

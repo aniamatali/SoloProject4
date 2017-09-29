@@ -25,7 +25,7 @@ $(document).ready(function() {
     var size = $("#size").val();
 
     var pizza = new Pizza(size);
-
+    $("#output").show();
     //Pushes the value of all input checked to the empty array
     $("input:checkbox[name=toppings]:checked").each(function() {
       var toppings = $(this).val();
@@ -49,6 +49,8 @@ $(document).ready(function() {
     //Reloads the page
     $("#reset").click(function() {
       location.reload();
+
+
     })
   });
 })
