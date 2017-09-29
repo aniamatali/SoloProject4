@@ -41,5 +41,12 @@ $(document).ready(function() {
 
     //Applies the prototype function to the pizza object to calculate the price
     $("#pizzaPrice").text("$ " + pizza.pizzaPrice());
-  })
+
+    $("#reset").click(function() {
+     location.reload();
+   })
+
+  });
+
+
 })
