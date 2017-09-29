@@ -13,8 +13,6 @@ _This project will let you enter your name, select a size for your pizza and sel
 * _Clone this repo_
 * _Double click the index.html file or open it in a browser_
 
-<<<<<<< HEAD
-### [Click here](http://aniamatali.github.io/SoloProject3/) to view this Project.
 =======
 ### [Click here](http://aniamatali.github.io/SoloProject4) to view this Project.
 >>>>>>> gh-pages
