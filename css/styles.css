@@ -16,8 +16,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003b5b', end
 }
 
 .col-md-6 {
-  border-top:2px solid black;
-  border-bottom:2px solid black;
+  border-top:3px solid #4992ff;
+  border-bottom:3px solid #4992ff;
   background-color:#f1f1f1;
   color:black;
 }
@@ -50,4 +50,11 @@ h3:hover {
 
 button:hover {
   text-decoration:underline;
+}
+
+#output {
+  margin-top:15px;
+  background-color:#f1f1f1;
+  color:black;
+  border:3px solid #4992ff;
 }
