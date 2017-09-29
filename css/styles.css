@@ -1,0 +1,53 @@
+body {
+  color:#fff;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.jumbotron {
+  margin-top:50px;
+  color:#fff;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#003b5b+50,006e2e+50,0063a0+50 */
+background: #003b5b; /* Old browsers */
+background: -moz-linear-gradient(left,  #003b5b 50%, #006e2e 50%, #0063a0 50%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #003b5b 50%,#006e2e 50%,#0063a0 50%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #003b5b 50%,#006e2e 50%,#0063a0 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003b5b', endColorstr='#0063a0',GradientType=1 ); /* IE6-9 */
+  border:5px solid black;
+}
+
+.col-md-6 {
+  border-top:2px solid black;
+  border-bottom:2px solid black;
+  background-color:#f1f1f1;
+  color:black;
+}
+
+h2 {
+  color:#fff;
+}
+
+.col-md-2 {
+  padding-top:45px;
+  font-size:20px;
+}
+
+button {
+  margin-top:10px
+}
+
+.form-group {
+  padding-top:10px;
+  font-size:15px;
+}
+
+.form-control {
+  width:100px;
+}
+
+h3:hover {
+  text-decoration:underline;
+}
+
+button:hover {
+  text-decoration:underline;
+}

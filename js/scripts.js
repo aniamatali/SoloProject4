@@ -32,22 +32,23 @@ $(document).ready(function() {
       pizza.toppings.push(toppings);
     });
 
+    //Empties the UL list before the for loop is ever run on click
     $("#toppingsPizza").empty();
+
     //Appends the array one by one
     for (var index = 0; index < pizza.toppings.length; index += 1) {
       $("#toppingsPizza").append("<li>" + pizza.toppings[index] + "</li>")
     }
+
     $("#customerName").text(inputtedName);
     $("#pizzaSize").text(size);
 
     //Applies the prototype function to the pizza object to calculate the price
     $("#pizzaPrice").text("$ " + pizza.pizzaPrice());
 
+    //Reloads the page
     $("#reset").click(function() {
-     location.reload();
-   })
-
+      location.reload();
+    })
   });
-
-
 })

@@ -5,6 +5,7 @@
     <title>Pizza Parlor</title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
   </head>
@@ -12,15 +13,15 @@
     <div class="container">
       <div class="jumbotron">
         <h1>Pizza Shop</h1>
-      </div>
+
       <div class="row">
         <div class="col-md-12">
           <form id="formOne">
             <div class="form-group">
-            <label for="yourName">Enter Your Name Here:</label>
+            <label for="yourName">Enter Your Name Here:</label><br>
             <input type="text" id="yourName"></input>
           </div>
-          <p>Select your size</p>
+          <h3>Select your size</h3>
           <div class="form-group">
             <select class="form-control" id="size">
               <option>Small</option>
@@ -32,7 +33,7 @@
       </div>
       <div class="row">
         <h2>Toppings</h2>
-        <div class="col-md-5">
+        <div class="col-md-6">
         <div class="form-group">
           <input type="checkbox" name="toppings" value="Pepperoni">Pepperoni<br>
           <input type="checkbox" name="toppings" value="Olives">Olives<br>
@@ -42,9 +43,10 @@
           <input type="checkbox" name="toppings" value="Jalapenos">Jalapenos<br>
           <input type="checkbox" name="toppings" value="Pineapple">Pineapple<br>
           <input type="checkbox" name="toppings" value="Sausage">Sausage<br>
+          <button id="calculate" type="submit" class="btn-info">Calculate Price</button>
         </div>
       </div>
-      <div class="col-md-5">
+      <div class="col-md-6">
         <div class="form-group">
           <input type="checkbox" name="toppings" value="Steak">Steak<br>
           <input type="checkbox" name="toppings" value="Arugula">Arugula<br>
@@ -54,24 +56,26 @@
           <input type="checkbox" name="toppings" value="Ghost Pepper">Ghost Pepper<br>
           <input type="checkbox" name="toppings" value="Gold Dust">Gold Dust<br>
           <input type="checkbox" name="toppings" value="Barbecue Sauce">Barbecue Sauce<br>
+          <button id="reset" type="submit" class="btn-info">Change Order</button>
         </div>
       </div>
-      <div class="col-md-2">
-        <button id="calculate" type="submit" class="btn-info">Calculate Price</button>
-        <button id="reset" type="submit" class="btn-info">Change Order</button>
+
+
+
         </form>
-      </div>
+
     </div>
 
         <!-- OUTPUT OF NAME/SIZE/TOPPINGS/PRICE HERE -->
         <div class="row">
           <div class="col-md-12">
         <div id="output">
-          <h3>Name: <span id="customerName"></span></h3>
-          <ul><h3>Toppings:</h3> <span id="toppingsPizza"></span></ul>
+          <h3>Customer: <span id="customerName"></span></h3>
           <h3>Size: <span id="pizzaSize"></span></h3>
           <h3>Price: <span id="pizzaPrice"></span></h3>
+          <ul><h3>Toppings:</h3> <span id="toppingsPizza"></span></ul>
         </div>
+      </div>
       </div>
     </div>
   </body>
