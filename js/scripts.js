@@ -19,5 +19,8 @@ $(document).ready(function() {
     alert(inputtedName);
     var size = $("#size").val();
     alert(size);
+
+    $("#customerName").text(inputtedName);
+    $("#pizzaSize").text(size);
   })
 })
