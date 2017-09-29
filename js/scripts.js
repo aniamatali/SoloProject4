@@ -6,7 +6,9 @@ function Pizza(size) {
 
 //Prototype for Pricing
 Pizza.prototype.pizzaPrice = function() {
-
+  if (this.size === "Small") {
+    return (5);
+  }
 }
 
 
@@ -40,5 +42,7 @@ $(document).ready(function() {
     $("#customerName").text(inputtedName);
     $("#pizzaSize").text(size);
     console.log(pizza);
+
+    alert(pizza.pizzaPrice())
   })
 })
