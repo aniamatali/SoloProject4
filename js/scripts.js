@@ -1,7 +1,14 @@
 //Constructor
 function Pizza(size) {
   this.size = (size);
+  this.toppings = [];
 }
+
+//Prototype for Pricing
+Pizza.prototype.pizzaPrice = function() {
+
+}
+
 
 
 
@@ -16,11 +23,20 @@ $(document).ready(function() {
 
     event.preventDefault();
     var inputtedName = $("#yourName").val();
-    alert(inputtedName);
     var size = $("#size").val();
-    alert(size);
+
+    var pizza = new Pizza(size);
+
+
+    $("input:checkbox[name=toppings]:checked").each(function() {
+      var toppings = $(this).val();
+      console.log(toppings);
+      pizza.toppings.push(toppings);
+    });
+    console.log(pizza.toppings.length);
 
     $("#customerName").text(inputtedName);
     $("#pizzaSize").text(size);
+
   })
 })
