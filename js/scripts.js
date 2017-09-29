@@ -1,3 +1,4 @@
+//BACKEND
 //Constructor
 function Pizza(size) {
   this.size = (size);
@@ -15,13 +16,7 @@ Pizza.prototype.pizzaPrice = function() {
   }
 }
 
-
-
-
-
-
-
-
+//FRONTEND
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
     event.preventDefault();
@@ -31,19 +26,20 @@ $(document).ready(function() {
 
     var pizza = new Pizza(size);
 
+    //Pushes the value of all input checked to the empty array
     $("input:checkbox[name=toppings]:checked").each(function() {
       var toppings = $(this).val();
-      console.log(toppings);
       pizza.toppings.push(toppings);
     });
 
+    //Appends the array one by one
     for (var index = 0; index < pizza.toppings.length; index += 1) {
       $("#toppingsPizza").append("<li>" + pizza.toppings[index] + "</li>")
     }
     $("#customerName").text(inputtedName);
     $("#pizzaSize").text(size);
-    console.log(pizza);
-    alert(pizza.toppings.length);
-    alert(pizza.pizzaPrice())
+
+    //Applies the prototype function to the pizza object to calculate the price
+    $("#pizzaPrice").text("$ " + pizza.pizzaPrice());
   })
 })
