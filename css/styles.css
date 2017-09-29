@@ -59,3 +59,7 @@ button:hover {
   border-top:5px solid #57aa58;
   border-bottom:5px solid #57aa58;
 }
+
+#output {
+  display:none;
+}
