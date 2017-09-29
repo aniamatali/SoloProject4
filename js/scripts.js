@@ -32,6 +32,7 @@ $(document).ready(function() {
       pizza.toppings.push(toppings);
     });
 
+    $("#toppingsPizza").empty();
     //Appends the array one by one
     for (var index = 0; index < pizza.toppings.length; index += 1) {
       $("#toppingsPizza").append("<li>" + pizza.toppings[index] + "</li>")
